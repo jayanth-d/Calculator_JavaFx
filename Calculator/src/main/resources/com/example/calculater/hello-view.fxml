@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<GridPane alignment="CENTER" hgap="20" vgap="10" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.calculater.HelloController">
+    <TextField GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" fx:id="textField1" onKeyReleased="#listenToTextField"/>
+    <TextField GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2" fx:id="textField2" onKeyReleased="#listenToTextField"/>
+
+    <Button text="+" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="50" fx:id="add" onAction="#onClick"/>
+    <Button text="-" GridPane.rowIndex="4" GridPane.columnIndex="0" prefWidth="50" fx:id="minus" onAction="#onClick"/>
+    <Button text="*" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.halignment="RIGHT" prefWidth="50" fx:id="multiply" onAction="#onClick"/>
+    <Button text="/" GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.halignment="RIGHT" prefWidth="50" fx:id="divide" onAction="#onClick"/>
+
+    <Label fx:id="result" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+
+
+</GridPane>
